@@ -30,7 +30,7 @@
 Для проверки :
 ```bash
 git clone https://github.com/muddinit/wbspreadsheettask.git
-cd your-repo-name
+cd wbspreadsheettask-main
 docker compose down --rmi local --volumes
 docker compose up --build
 ```
