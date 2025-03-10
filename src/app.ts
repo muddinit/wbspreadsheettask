@@ -7,12 +7,12 @@ import { exportToGoogleSheets } from "#rest_functions/routes/googleApi.js";
 
 await migrate.latest();
 await seed.run();
+console.log("All migrations and seeds have been run");
 
 const runTasks = async () => {
 
     const apiUrl: string = "https://common-api.wildberries.ru/api/v1/tariffs/box";
-    console.log("All migrations and seeds have been run");
-
+    
     // Wildberries
     const tariffData = await getTariffs(apiUrl);
     const transformedData = transformData(tariffData);
