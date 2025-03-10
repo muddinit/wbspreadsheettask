@@ -9,8 +9,6 @@ await migrate.latest();
 await seed.run();
 
 const runTasks = async () => {
-    await migrate.latest();
-    await seed.run();
 
     const apiUrl: string = "https://common-api.wildberries.ru/api/v1/tariffs/box";
     console.log("All migrations and seeds have been run");
