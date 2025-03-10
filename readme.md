@@ -21,6 +21,7 @@
 
 Для правильной работы приложения нужно
 
+- Переименовать example.env в .env
 - Ввести ключ API WILDBERRIES в .env
 - Ввести данные сервис аккаунта Google в /src/data/credentials.json
 - Ввести id таблиц google в /src/data/googlesheetid.json
@@ -30,7 +31,7 @@
 Для проверки :
 ```bash
 git clone https://github.com/muddinit/wbspreadsheettask.git
-cd wbspreadsheettask-main
+cd wbspreadsheettask
 docker compose down --rmi local --volumes
 docker compose up --build
 ```
